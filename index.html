@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover hidden ways to make money online, from freelance gigs to part-time jobs and more. Learn how to earn extra income today!">
+  <meta name="keywords" content="make money online, freelance gigs, part-time jobs, passive income, online money hacks">
+  <link rel = "stylesheet" href = "general.css">
+  <link rel = "stylesheet" href = "hero.css">
+  <link rel = "stylesheet" href = "nav.css">
+  <link rel = "stylesheet" href = "testimonial.css">
+  <link rel = "stylesheet" href = "form.css">
+  <link rel = "stylesheet" href = "content.css">
+  <link rel = "stylesheet" href = "footer.css">
+  <link rel = "stylesheet" href = "responsive.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="scripts/index.js"></script>
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><i class="fa fa-university" aria-hidden="true">
+      <!-- i class is the logo --> 
+      Student </i></div>
+
+      <!-- place all the links inside a list and then inside nav element for uniformity -->
+    <nav>
+      <ul>
+        <li><a class="scroll-button" onclick="document.getElementById('hero-section').scrollIntoView({ behavior: 'smooth' });">Home</a></li>
+        <li><a class="scroll-button" onclick="document.getElementById('content-section').scrollIntoView({ behavior: 'smooth' });">Solutions</a></li>
+        <li><a href="#">Stations</a></li>
+        <li><a href="#">Sections</a></li>
+        <li><a class="scroll-button" onclick="document.getElementById('login-form').scrollIntoView({ behavior: 'smooth' });">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main class="hero-section" id="hero-section" onclick="document.getElementById('login-form').scrollIntoView({ behavior: 'smooth' });">
+    <div class="get-started">
+        <span class="getstarted">GET STARTED</span>
+    </div>
+</main>
+
+
+
+  <section class="content-section" id="content-section">
+    <div class="card">
+      <a href="#" target="_blank">  <!-- __blank opens it in new tab -->
+        <img src="pictures/push.jpg" width="300" height="300" alt="Freelance Gigs">
+        <h2>Hidden Freelance Gigs</h2>
+        <p>Discover hidden opportunities to earn money through freelancing.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="#" target="_blank">
+        <img src="pictures/money.jpg" width="300" height="300" class="Moneyt" alt="Part-Time Jobs">
+        <h2>Covert Part-Time Jobs</h2>
+        <p>Discover unusual part-time job ideas.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="#" target="_blank">
+        <img src="pictures/onlinemoneyhacks.jpeg" width="300" height="300" alt="Money Hacks">
+        <h2>Online Money Hacks</h2>
+        <p>Tips to maximize your online earnings with minimal effort.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="#" target="_blank">
+        <img src="pictures/legalll.jpg" width="300" height="300" alt="Craft Markets">
+        <h2>Legal Adherence, Risk Free</h2>
+        <p>Legal Supervision ensures compilcance with laws and effective risk minimization.</p>
+      </a>
+    </div>
+  </section>
+
+  <div class="testimonials">
+        <div class="testimonial">
+            <img src="pictures/testimonial1.jpg" alt="Testimonial 1" class="testimonial-img">
+            <p>"This is a testimonial!"</p>
+            <h4>-Balen Shah</h4>
+        </div>
+        <div class="testimonial">
+            <img src="pictures/testimonial2.jpg" alt="Testimonial 2" class="testimonial-img">
+            <p>"Another testimonial!"</p>
+            <h4>-KP Oli</h4>
+        </div>
+</div>
+
+
+
+  <section class="loginFormandsingupform">
+    <form class="form" id="login-form" method="post" onsubmit=" return validateform()" name="login">
+      <span class="input-span">
+        <label for="login-email" class="label">Email</label>
+        <input type="email" id="login-email" name="email" required />
+      </span>
+      <span class="input-span">
+        <label for="login-password" class="label">Password</label>
+        <input type="password" id="login-password" name="password"required />
+      </span>
+      <span class="span"><a href="#">Forgot password?</a></span>
+      <!-- Login button is implemented as an inpu -->
+      <input class="submit" type="submit" value="Log in" />
+      <span class="span">Don't have an account? <a onclick="showSignupForm()">Sign up</a></span>
+    </form>
+
+    <form class="signform" id="signup-form">
+      <span class="input-span">
+        <label for="signup-name" class="label">Name</label>
+        <input type="text" id="signup-name" name="name"required />
+      </span>
+      <span class="input-span">
+        <label for="signup-email" class="label">Email</label>
+        <input type="email" id="signup-email" name="email" required />
+      </span>
+      <span class="input-span">
+        <label for="signup-password" class="label">Password</label>
+        <input type="password" id="signup-password"  name="password" required />
+      </span>
+      <span class="span"><a href="#">Forgot password?</a></span>
+      <input class="submit" type="submit" value="Sign up" />
+      <span class="span">Already have an account? <a onclick="showLoginForm()">Log in</a></span>
+    </form>
+  </section>
+
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Secret Student Income</p>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

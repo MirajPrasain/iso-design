@@ -1,0 +1,50 @@
+.content-section {
+  display: grid;
+  grid-template-columns: 500px 500px;
+
+  margin-left: 50px;
+  column-gap: 120px;
+ 
+
+
+  animation: fadein 5.5s ease-in-out;
+}
+
+
+.card {
+
+  height: 400px;
+  width: 400px; 
+  
+
+  background-color: black;
+  padding: 0px;
+  border-radius: 18px;
+
+  width: 100%;
+  text-align: center;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadein 3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 70px rgba(247, 242, 242, 0.5);
+  padding: 1.6px;
+  transition: padding 0.3s;
+}
+
+
+/* selection occurs from left to right i.e All a tag elements INSIDE card INSIDE .content-section  */
+.content-section .card a { 
+  text-decoration: none;
+  color: white;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 18px;
+}

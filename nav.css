@@ -1,0 +1,46 @@
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+
+  background-image: linear-gradient(to right,rgb(30, 30, 30),rgb(0, 0, 0) ,rgb(15, 15, 15),rgb(30, 30, 30));
+  animation: fadein 1.5s ease-in-out;
+
+  /* higher z index means its above/visible */
+  z-index: 5;  
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.navbar ul {
+  display: flex; 
+  list-style: none;  /* Removes default bullet points from the <ul>. */
+  gap: 32px;
+}
+
+.navbar a {
+  text-decoration: none;  /* Removes the default underline from links. */
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 20px;
+
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar a:hover{
+  border-bottom:2px solid white ;
+}
+
+

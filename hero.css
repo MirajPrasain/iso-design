@@ -1,0 +1,31 @@
+
+.hero-section {
+  position: relative; 
+  height: 80vh; /* Adjust the height to your desired size (e.g., 50% of the viewport height) */
+
+
+  
+  background-image: url('pictures/bg.jpg'); /* Set the image as the background */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Ensures the image is centered */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+
+  z-index: 4;
+}
+
+
+
+.getstarted {
+  position:absolute; 
+  top: 40%;
+  left: 43%;
+  
+ 
+  font-size: 30px;
+  font-weight: 600;
+  color:wheat;
+  font-family: 'Garden Song Regular', serif;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

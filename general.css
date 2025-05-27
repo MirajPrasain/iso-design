@@ -1,0 +1,23 @@
+*{ 
+  margin:0;
+  padding:0;
+
+}
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #000;
+
+  margin-top: 90px; 
+  width:100vw; 
+
+
+  animation: fadein 1.5s ease-in-out;
+}
+@import url('https://example.com/garden-song-regular-webfont.css');
+
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

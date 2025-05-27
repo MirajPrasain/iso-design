@@ -1,0 +1,64 @@
+/* max width - UPTO , min-width - FROM  */
+/* Extra Small Devices - phone */
+@media (max-width: 576px) {  
+  .content-section { 
+    display: grid; 
+    grid-template-columns: 1fr;
+  }
+
+
+  .testimonials{ 
+    display:flex; 
+    flex-direction:column; 
+    justify-content: center;
+    column-gap:30px; 
+  }
+} 
+
+
+/* Small Devices - tablets */
+@media (min-width: 768px) and (max-width: 992px) { 
+.content-section { 
+  display: grid; 
+  grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 768px) { 
+  .content-section { 
+    display: grid; 
+    grid-template-columns: 1fr !important; /* Ensures single column below 768px */
+  }
+}
+
+.testimonials{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px
+  }
+
+
+} 
+
+
+@media (max-width: 992px) { 
+  .content-section { 
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+  
+  .testimonials { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    column-gap: 30px;
+  }
+
+}
+
+@media (max-width: 1200px) { 
+  
+}
